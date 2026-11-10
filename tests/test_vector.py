@@ -1,5 +1,5 @@
 import pytest
-from Vectors import Vector
+from scripts.vectors import Vector
 
 
 def test_equals():
