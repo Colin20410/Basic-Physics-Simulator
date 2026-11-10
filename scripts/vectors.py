@@ -79,7 +79,7 @@ class Vector:
           dot += self.vector[0, i] * altVec.vector[0, i]
        return dot
 
-    def updateMag(self):
+    def update_mag(self):
         mag = 0
         for i in range(0,3):
             mag += math.pow(self.vector[0,i], 2)
