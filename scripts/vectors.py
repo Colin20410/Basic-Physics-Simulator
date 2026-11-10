@@ -31,7 +31,7 @@ class Vector:
             add = Vector(self.type, 0, 0, 0)
             for i in range(0,3):
                add.vector[0,i] = self.vector[0,i] + altVec.vector[0,i]
-            add.updateMag()
+            add.update_mag()
             return add
 
         else:
@@ -44,7 +44,7 @@ class Vector:
             sub = Vector(self.type, 0, 0, 0)
             for i in range(0,3):
                sub.vector[0,i] = self.vector[0,i] - altVec.vector[0,i]
-            sub.updateMag()
+            sub.update_mag()
             return sub
 
         else:
