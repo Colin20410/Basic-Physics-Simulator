@@ -8,3 +8,8 @@ class Force(Vector):
         super().__init__("Force", x, y, z)
         self.object = object
         self.object.force_list.append(self)
+
+class NetForce(Vector):
+
+    def __init__(self, x: float, y: float, z: float):
+        super().__init__("Net Force" , x , y , z)
