@@ -51,7 +51,7 @@ class Vector:
            print("Couldn't subtract; Incompatible Vector objects")
            return None
 
-    def __mul__(self, altVec) -> Vector:
+    def cross(self, altVec) -> Vector:
         #Matrix Set up
 
         tool = np.empty((2,3))

@@ -59,9 +59,9 @@ def test_vec_cross():
     j = Vector("test", 0,1,0)
     k = Vector("test", 0,0,1)
 
-    test1 = i * j
-    test2 = j * k
-    test3 = i * k
+    test1 = i.cross(j)
+    test2 = j.cross(k)
+    test3 = i.cross(k)
 
     assert test1 == k
     assert test2 == i
