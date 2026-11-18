@@ -19,6 +19,13 @@ def test_equals():
     assert bool3 == False
     assert bool4 == False
 
+def test_mul():
+    pass
+    v1 = Vector("test", 1, 2 ,3)
+    v2 = v1 * 2
+
+    assert v2 == Vector("test", 2, 4, 6)
+
 def test_neg():
     v1 = Vector("test", 1 , 2 ,3)
     neg_v1 = Vector("test", -1 , -2 , -3)
