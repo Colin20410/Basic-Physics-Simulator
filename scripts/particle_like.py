@@ -19,7 +19,7 @@ class ParticleLike:
     
     
     def boost(self, x: float, y: float, z: float):
-        self.velocity[0,0] = x
-        self.velocity[0,1] = y
-        self.velocity[0,2] = z
+        self.velocity.vector[0,0] = x
+        self.velocity.vector[0,1] = y
+        self.velocity.vector[0,2] = z
 
