@@ -20,6 +20,10 @@ class Vector:
             return False
         else:
             return True
+        
+    def __mul__(self, factor):
+        mul = type(self)(self.type, factor * self.vector[0,0], factor * self.vector[0,1], factor * self.vector[0,2]) #type() is used here to account for future subclasses that will be added
+        return mul
 
     def __neg__(self):
         neg = type(self)(self.type, -self.vector[0,0], -self.vector[0,1], -self.vector[0,2]) #type() is used here to account for future subclasses that will be added
